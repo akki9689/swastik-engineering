@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import video1 from "../assets/video1.mp4";
-import video2 from "../assets/video2.mp4";
-import video3 from "../assets/video3.mp4";
+import video1 from "../data/video1.mp4";
+import video2 from "../data//video2.mp4";
+import video3 from "../data/video3.mp4";
 
 const slides = [
   {

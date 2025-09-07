@@ -1,5 +1,5 @@
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
-import logo from "../assets/Swastik-logo.png";
+import logo from "../data/swastik-logo.png"; // Ensure your logo is in src/assets
 
 export const Footer = () => {
   return (

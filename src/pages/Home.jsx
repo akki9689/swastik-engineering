@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import factoryVideo from "../assets/factory.mp4"; // Your video
+import factoryVideo from "../data/factory.mp4"; // Your video
 import { Hero } from "../components/Hero";
 import { FaCogs, FaLightbulb, FaGlobe } from "react-icons/fa"; // Icons for highlights
 

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom"; // ✅ Import Link
-import logo from "../assets/Swastik-logo.png"; // Ensure your logo is in src/assets
+import logo from "../data/Swastik-logo.png"; // Ensure your logo is in src/assets
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

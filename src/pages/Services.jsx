@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import machiningImg from "../assets/machining.jpg";
-import designImg from "../assets/design.jpg";
-import dieCastingImg from "../assets/die.jpg";
+import machiningImg from "../data/machining.jpg";
+import designImg from "../data/design.jpg";
+import dieCastingImg from "../data/die.jpg";
 
-import assemblyImg from "../assets/assembly.jpg";
+import assemblyImg from "../data/assembly.jpg";
 
 const services = [
   {

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import aboutImg from "../assets/swastik-logo.png";
+import aboutImg from "../data/swastik-logo.png";
 
 export const About = () => {
   return (
