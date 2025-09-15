@@ -3,7 +3,7 @@ import logo from "../data/swastik-logo.png"; // Ensure your logo is in src/asset
 
 export const Footer = () => {
   return (
-    <footer className="bg-blue-900 text-white pt-12 pb-6">
+    <footer className="bg-gray-600 text-white pt-12 pb-6">
       <div className="container mx-auto px-6 md:px-12 lg:px-20 grid md:grid-cols-3 gap-12">
         
         {/* Logo & Description */}
@@ -20,10 +20,10 @@ export const Footer = () => {
         {/* Quick Links */}
         <div className="flex flex-col space-y-2">
           <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
-          <a href="/" className="hover:text-green-400 transition">Home</a>
-          <a href="#about" className="hover:text-green-400 transition">About</a>
-          <a href="#services" className="hover:text-green-400 transition">Services</a>
-          <a href="#contact" className="hover:text-green-400 transition">Contact</a>
+          <a href="/" className="hover:text-orange-400 transition">Home</a>
+          <a href="#about" className="hover:text-orange-400 transition">About</a>
+          <a href="#services" className="hover:text-orange-400 transition">Services</a>
+          <a href="#contact" className="hover:text-orange-400 transition">Contact</a>
         </div>
 
         {/* Contact Info & Social */}
