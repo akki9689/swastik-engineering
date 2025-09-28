@@ -1,11 +1,11 @@
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
 import logo from "../data/swastik-logo.png"; // Ensure your logo is in src/assets
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer className="bg-gray-600 text-white pt-12 pb-6">
       <div className="container mx-auto px-6 md:px-12 lg:px-20 grid md:grid-cols-3 gap-12">
-        
+
         {/* Logo & Description */}
         <div className="flex flex-col items-start space-y-4">
           <div className="flex items-center space-x-3">
@@ -50,3 +50,5 @@ export const Footer = () => {
     </footer>
   );
 };
+
+export default Footer;

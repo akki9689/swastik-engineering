@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import video1 from "../data/video1.mp4";
-import video2 from "../data//video2.mp4";
+import video2 from "../data/video2.mp4";
 import video3 from "../data/video3.mp4";
 
 const slides = [
@@ -24,6 +24,13 @@ const slides = [
 
 export const Hero = () => {
   const [index, setIndex] = useState(0);
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setLoaded(false); // reset before loading new video
+    const timer = setTimeout(() => setLoaded(true), 100); // slight delay to trigger lazy load
+    return () => clearTimeout(timer);
+  }, [index]);
 
   // Auto-slide every 8 seconds
   useEffect(() => {
@@ -36,19 +43,22 @@ export const Hero = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden">
       <AnimatePresence mode="wait">
-        <motion.video
-          key={slides[index].video}
-          src={slides[index].video}
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1 }}
-        />
+        {loaded && (
+          <motion.video
+            key={slides[index].video}
+            src={slides[index].video}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+            preload="metadata"
+          />
+        )}
       </AnimatePresence>
 
       {/* Overlay */}

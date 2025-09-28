@@ -19,7 +19,9 @@ export const Contact = () => {
           >
             <form className="space-y-6">
               <div>
-                <label className="block text-gray-700 font-medium mb-2">Name</label>
+                <label className="block text-gray-700 font-medium mb-2">
+                  Name
+                </label>
                 <input
                   type="text"
                   placeholder="Your Name"
@@ -27,7 +29,9 @@ export const Contact = () => {
                 />
               </div>
               <div>
-                <label className="block text-gray-700 font-medium mb-2">Email</label>
+                <label className="block text-gray-700 font-medium mb-2">
+                  Email
+                </label>
                 <input
                   type="email"
                   placeholder="Your Email"
@@ -35,7 +39,9 @@ export const Contact = () => {
                 />
               </div>
               <div>
-                <label className="block text-gray-700 font-medium mb-2">Message</label>
+                <label className="block text-gray-700 font-medium mb-2">
+                  Message
+                </label>
                 <textarea
                   placeholder="Your Message"
                   rows="5"
@@ -61,12 +67,18 @@ export const Contact = () => {
           >
             {/* Company Details */}
             <div className="bg-white p-6 rounded-2xl shadow-lg space-y-4">
-              <h3 className="text-2xl font-semibold text-green-700">Get in Touch</h3>
-              <p className="text-gray-700">Swastik Engineering 
+              <h3 className="text-2xl font-semibold text-green-700">
+                Get in Touch
+              </h3>
+              <p className="text-gray-700">Swastik Engineering</p>
+              <p className="text-gray-700">
+                ASHAPURAM SR. NO. 78/2, Dangat Estate, Shivane, Pune, Maharashtra
+                411023
               </p>
-              <p className="text-gray-700">ASHAPURAM SR. NO. 78/2, Dangat Estate, Shivane, Pune, Maharashtra 411023</p>
-              <p className="text-gray-700">Phone:123456789 </p>
-              <p className="text-gray-700">Email: swastikaenginnering@gmail.com</p>
+              <p className="text-gray-700">Phone: 123456789</p>
+              <p className="text-gray-700">
+                Email: swastikaenginnering@gmail.com
+              </p>
             </div>
 
             {/* Google Map */}
@@ -75,7 +87,7 @@ export const Contact = () => {
                 title="Swastik Engineering Location"
                 src=""
                 className="w-full h-64 md:h-full"
-                allowFullScreen=""
+                allowFullScreen
                 loading="lazy"
               ></iframe>
             </div>

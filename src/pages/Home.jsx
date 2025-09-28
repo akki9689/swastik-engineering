@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import factoryVideo from "../data/factory.mp4"; // Your video
+import factoryVideo from "../data/factory.mp4";
 import { Hero } from "../components/Hero";
-import { FaCogs, FaLightbulb, FaGlobe } from "react-icons/fa"; // Icons for highlights
+import Footer from "../components/Footer"; // Default export
+import { FaCogs, FaLightbulb, FaGlobe } from "react-icons/fa";
 
 export const Home = () => {
   const highlights = [
@@ -66,6 +67,9 @@ export const Home = () => {
           ))}
         </div>
       </section>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
